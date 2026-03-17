@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter cloned Page</title>
-    
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
 </head>
-<body class="bg-dark">
-    
+
+<body class="bg-black text-white d-flex gap-4">
+
+    <!--Side Navbar-->
+    <aside class="sidebar d-flex flex-column">
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-twitter-x"></i></span>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-house-door-fill active"></i></span> <span class="description active">Home</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-search"></i></span> <span class="description">Explore</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-bell"></i></span> <span class="description">Notifications</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-person-plus"></i></span> <span class="description">Follows</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-envelope"></i></span> <span class="description">Chat</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><img src="./assets/grok.svg" alt="grok" height="20px" width="20px"/></span> <span class="description">Grok</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-person"></i></span> <span class="description">Profile</span>
+        </a>
+        <a href="#" class="nav-link">
+            <span><i class="bi bi-three-dots more"></i></span> <span class="description">More</span>
+        </a>
+        <button type="button" class="btn btn-light rounded-pill fw-bolder post-btn">Post</button>
+        <button type="button" class="btn btn-black rounded-pill d-flex justify-content-center align-items-center gap-2 p-2 profile-btn">
+            <img src="./assets/iam.png" alt="profile" height="50px" width="50px"/>
+            <span class="d-flex flex-wrap details">
+                <p class="description title text-white">eric_</p>
+                <p class="description subtitle">@EricMothupi21</p>
+            </span> 
+            <i class="bi bi-three-dots description more-details p-2"></i>
+        </button>
+    </aside>
+
+    <!--Feed Section-->
+    <main class="main-content">
+        <section class="feed">
+            <h1>Feed Section</h1>
+        </section>
+
+        <!--Side Section-->
+        <aside class="subscription">
+            <h1>SubScription</h1>
+
+        </aside>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
