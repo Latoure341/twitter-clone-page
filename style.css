@@ -40,7 +40,7 @@ body {
 }
 .more {
     padding: 0.5px 1px;
-    border: 0.2rem solid white;
+    border: 0.1rem solid white;
     border-radius: 50%;
 }
 .btn {
@@ -88,14 +88,22 @@ button img {
     border-radius: 20%;
 } 
 
-
 /* Main Content */
 .main-content {
     display: flex;
     gap: 2rem;
-    padding: 0.5rem 2rem;
+    padding: 0; 
     margin-left: 20rem;
     height: 100%;
+}
+
+/* Section Feed */
+.feed {
+    width: 37.5rem !important;
+}
+.feed-btn:hover {
+    background-color: rgb(25, 25, 25);
+    transition: ease-in-out 0.3s;
 }
 
 /* Media Queries */
