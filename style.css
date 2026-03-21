@@ -100,14 +100,41 @@ button img {
 
 /* Section Feed */
 .feed {
-    width: 49.5rem !important;
+    width: 50.5rem !important;
 }
 .feed-btn:hover {
     background-color: rgb(25, 25, 25);
     transition: ease-in-out 0.3s;
 }
+.post-input, .post-input:focus {
+    outline: none;
+}
+.post-input:focus::after {
+    content: "Hello";
+}
 
 /* Aside Section */
+.subscription {
+    width: 26rem !important;
+}
+.search-button:focus {
+    border-color: lightblue !important;
+}
+.search-button input:focus, .search-button input{
+    color: white;
+    outline: none !important;
+    border: none !important;
+}
+.search-button input {
+    width: 17rem !important;
+}
+.sub {
+    width: 22rem !important;
+}
+.sub .subscribe {
+    width: 7rem;
+}
+
 
 /* Media Queries */
 @media (max-width: 480px) {
