@@ -8,79 +8,83 @@
     <link rel="icon" href="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?semt=ais_hybrid&w=740&q=80"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="bg-black text-white d-flex gap-4">
 
     <!--Side Navbar-->
     <aside class="sidebar d-flex flex-column">
-        <a href="#" class="nav-link">
-            <span><i class="bi bi-twitter-x"></i></span>
-        <a href="#" class="nav-link">
-            <span><i class="bi bi-house-door-fill active"></i></span> <span class="description active">Home</span>
+        <a href="#" class="ps-1">
+            <span class="nav-link rounded-pill py-1 px-3"><i class="bi bi-twitter-x text-light"></i></span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link rounded-5 pe-0 text-wrap" style="width: 10rem;">
+            <span class=""><i class="bi bi-house-door-fill active"></i></span> <span class="description active">Home</span>
+        </a>
+        <a href="#" class="nav-link rounded-5" style="width: 10rem;">
             <span><i class="bi bi-search"></i></span> <span class="description">Explore</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link rounded-5" style="width: 13rem;">
             <span><i class="bi bi-bell"></i></span> <span class="description">Notifications</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link  rounded-5" style="width: 10rem;">
             <span><i class="bi bi-person-plus"></i></span> <span class="description">Follows</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link rounded-5" style="width: 8rem;">
             <span><i class="bi bi-envelope"></i></span> <span class="description">Chat</span>
         </a>
-        <a href="#" class="nav-link">
-            <span><img src="./assets/grok.svg" alt="grok" height="20px" width="20px"/></span> <span class="description">Grok</span>
+        <a href="#" class="nav-link rounded-5" style="width: 8rem;">
+            <span class=""><img src="./assets/grok-1.svg" alt="grok" height="30px" width="30px"/></span> <span class="description">Grok</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link rounded-5" style="width: 9rem;">
             <span><i class="bi bi-person"></i></span> <span class="description">Profile</span>
         </a>
-        <a href="#" class="nav-link">
+        <a href="#" class="nav-link rounded-5" style="width: 8rem;">
             <span><i class="bi bi-three-dots more"></i></span> <span class="description">More</span>
         </a>
-        <button type="button" class="btn btn-light rounded-pill fw-bolder post-btn">Post</button>
+        <button type="button" class="btn btn-light rounded-pill fw-bolder post-btn py-2">Post</button>
+
         <button type="button" class="btn btn-black rounded-pill d-flex justify-content-center align-items-center gap-2 p-2 profile-btn">
-            <img src="./assets/iam.png" alt="profile" height="50px" width="50px"/>
+            <img src="https://pbs.twimg.com/profile_images/2033865584266346496/g1G15O4b_400x400.jpg" alt="profile" height="50px" width="50px"/>
             <span class="d-flex flex-wrap details">
                 <p class="description title text-white">eric_</p>
                 <p class="description subtitle">@EricMothupi21</p>
             </span> 
-            <i class="bi bi-three-dots description more-details p-2"></i>
+            <i class="bi bi-three-dots description more-details p-2 ms-4"></i>
         </button>
     </aside>
 
     <!--Feed Section-->
     <main class="main-content">
         
-        <section class="container text-center feed border-end border-6 border-secondary p-0 m-0">
-            <div class="row d-flex justify-content-end border-bottom border-secondary p-0 m-0">
+        <section class="text-center feed border-end border-6 border-secondary p-0 m-0">
+
+            <div class="position-fixed top-0 row d-flex justify-content-end border-bottom border-secondary bg-opacity-75 bg-black p-0 m-0" style="width: 37rem;">
                 <div class="col-6 p-2 m-0 feed-btn">
-                    <span class="border-bottom border-primary border-4 p-2">For you</span>
+                    <span class="border-bottom border-primary border-4 p-2 fw-bolder">For you</span>
                 </div>
                 <div class="col-6 p-2 feed-btn m-0">
-                    <span class="p-4">Following</span>
+                    <span class="p-4 text-secondary">Following</span>
                 </div>
             </div>
 
-            <div class="row border-bottom border-secondary m-0">
-                <div class="col">
+            <div class="mt-4 row border-bottom border-secondary m-0">
+                <div class="col mt-4">
                     <form class="d-flex flex-column">
                          <div class="d-flex flex-row justify-content-start align-items-center p-2 mt-2">
                             <img class="rounded-pill me-2 ms-0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnz0YCfxEjvhGSnJQwgOwSbFIzHndPRjwHw&s" alt="profile" height="40px" width="40px"/>
                             <input class="text-white fs-5 bg-black border border-0 post-input" type="text" placeholder="What's Happening?"/>
                          </div>
                          <div class="icons d-flex justify-content-between align-items-center">
-                            <div class="icon-container d-flex gap-2 my-3 ms-4 px-4">
-                                <a href="#" class="ms-3"><i class="bi bi-image fs-6"></i></a>
-                                <a href="#" class="ms-3">2</a>
-                                <a href="#" class="ms-3">3</a>
-                                <a href="#" class="ms-3"><i class="bi bi-list-ul fs-6"></i></a>
-                                <a href="#" class="ms-3"><i class="bi bi-emoji-smile fs-6"></i></a>
-                                <a href="#" class="ms-3">6</a>
-                                <a href="#" class="ms-3"><i class="bi bi-geo-alt fs-6"></i></a>
-                                <a href="#" class="ms-3"><i class="bi bi-flag fs-6"></i></a>
+                            <div class="icon-container d-flex align-items-center gap-2 my-3 ms-2 px-4">
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">image</span></a>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">gif_box</span></a>
+                                <a href="#" ><img src="./assets/grok-2.svg" alt="grok" height="20px" width="20px"/>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">list</span>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">sentiment_satisfied</span></a>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">calendar_clock</span></a>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">location_on</span>
+                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">flag_2</span>
                             </div>
                             <button class="btn btn-secondary text-black fw-bolder me-2 rounded-4 py-1 px-3">Post</button>
                          </div>
@@ -98,11 +102,11 @@
             <div class="row border-bottom border-secondary m-0">
                 <div class="col">
                     <div class="row post-content p-2">
-                        <div class="col-1 pe-0  ps-0">
-                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
+                        <div class="col-1 pe-2  ">
+                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
                         </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
-                            <div class="post-heading container d-flex justify-content-between px-0">
+                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
+                            <div class="post-heading d-flex gap-4">
                                 <div class="heading d-flex align-items-center me-4">
                                     <span class="fs-6 pe-1">Lizzy</span>
                                     <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
@@ -110,46 +114,8 @@
                                     <span class="fs-6 pe-1">. 4h</span>
                                 </div>
                                 <div class="heading-icons ms-4">
-                                    <i class="ms-4">grok</i>
-                                    <i class="bi bi-three-dots description more-details ps-1 fs-6"></i>
-                                </div>
-                            </div>
-                            <p class="content-description">If you ever need to use this just know your partner is cheating.</p>
-                            <div class="content-picture">
-                                <img class="rounded-4" src="https://pbs.twimg.com/media/HDw5keSXwAAIssQ?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
-                            </div>
-                            <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
-                                <span class="me-4 p-2"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
-                                <span class="ms-4 p-2">
-                                    <i class="bi fs-6 bi-bookmark text-secondary"></i> 
-                                    <i class="bi fs-6 bi-upload text-secondary"></i>
-                                </span>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row border-bottom border-secondary m-0">
-                <div class="col">
-                    <div class="row post-content p-2">
-                        <div class="col-1 pe-2  ">
-                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
-                        </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
-                            <div class="post-heading d-flex gap-4">
-                                <div class="heading d-flex align-items-center me-4">
-                                    <span class="fs-6">Lizzy</span>
-                                    <a class="user-details"><i class="bi bi-patch-check fs-6"></i></a>
-                                    <span class="fs-6 text-secondary"> @Ngimuhlez</span>
-                                    <span class="fs-6"> 4h</span>
-                                </div>
-                                <div class="heading-icons ms-4">
-                                    <i class="ms-4">grok</i>
-                                    <i class="bi bi-three-dots description more-details p-2"></i>
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
                                 </div>
                             </div>
                             <p class="content-description">If you ever need to use this just know your partner is cheating.</p>
@@ -291,7 +257,7 @@
         <aside class="subscription">
             <div class="container p-2 d-flex flex-column align-items-start">
 
-                <span class="border border-secondary p-2 rounded-5 search-button">
+                <span class="position-fixed top-0 bg-black border border-secondary p-2 rounded-5 search-button">
                     <i class="bi bi-search fs-6 text-secondary"></i>
                     <input class="fs-6 bg-black pe-4 me-4" type="search" placeholder="Search" aria-label="Search"/>
                 </span>
