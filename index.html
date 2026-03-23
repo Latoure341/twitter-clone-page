@@ -58,7 +58,7 @@
     <main class="main-content">
         
         <section class="text-center feed border-end border-6 border-secondary p-0 m-0">
-
+            <!--Top Navigation-->
             <div class="position-fixed top-0 row d-flex justify-content-end border-bottom border-secondary bg-opacity-75 bg-black p-0 m-0" style="width: 37rem;">
                 <div class="col-6 p-2 m-0 feed-btn">
                     <span class="border-bottom border-primary border-4 p-2 fw-bolder">For you</span>
@@ -68,6 +68,7 @@
                 </div>
             </div>
 
+            <!--Post Input-->
             <div class="mt-4 row border-bottom border-secondary m-0">
                 <div class="col mt-4">
                     <form class="d-flex flex-column">
@@ -77,24 +78,21 @@
                          </div>
                          <div class="icons d-flex justify-content-between align-items-center">
                             <div class="icon-container d-flex align-items-center gap-2 my-3 ms-2 px-4">
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">image</span></a>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">gif_box</span></a>
-                                <a href="#" ><img src="./assets/grok-2.svg" alt="grok" height="20px" width="20px"/>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">list</span>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">sentiment_satisfied</span></a>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">calendar_clock</span></a>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">location_on</span>
-                                <a href="#" ><span class="material-symbols-outlined fs-5 p-2">flag_2</span>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">image</span></a>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">gif_box</span></a>
+                                <a href="#" class="ms-0"><img src="./assets/grok-2.svg" alt="grok" height="20px" width="20px"/>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">list</span>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">sentiment_satisfied</span></a>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">calendar_clock</span></a>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">location_on</span></a>
+                                <a href="#" class="ms-0"><span class="material-symbols-outlined fs-5 p-2">flag_2</span></a>
                             </div>
                             <button class="btn btn-secondary text-black fw-bolder me-2 rounded-4 py-1 px-3">Post</button>
                          </div>
                     </form>
                 </div>
-            </div>
-
-            <div class="row border-bottom border-secondary m-0 d-flex align-items-center justify-content-center">
-                <div class="col">
-                    <p class="text-primary text-center py-2 my-2 fs-6 ">Show 100 posts</p>
+            </di        <!--More post        <div class="row bordetom border-secondary m-0 d-flex align-items-center justify-content-center">
+                <div class="col">                <p class="text-primary text-center py-2 my-2 ">Show 100 posts</p>
                 </div>
             </div>
 
@@ -102,13 +100,14 @@
             <div class="row border-bottom border-secondary m-0">
                 <div class="col">
                     <div class="row post-content p-2">
-                        <div class="col-1 pe-2  ">
-                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
                         </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
-                            <div class="post-heading d-flex gap-4">
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
                                 <div class="heading d-flex align-items-center me-4">
-                                    <span class="fs-6 pe-1">Lizzy</span>
+                                    <span class="fs-6 pe-1 fw-bolder">Lizzy</span>
                                     <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
                                     <span class="fs-6 text-secondary pe-1">@Ngimuhlez</span>
                                     <span class="fs-6 pe-1">. 4h</span>
@@ -123,11 +122,11 @@
                                 <img class="rounded-4" src="https://pbs.twimg.com/media/HDw5keSXwAAIssQ?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
                             </div>
                             <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
-                                <span class="me-4 p-2"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
-                                <span class="ms-4 p-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
+                                <span class="ms-4 p-1">
                                     <i class="bi fs-6 bi-bookmark text-secondary"></i> 
                                     <i class="bi fs-6 bi-upload text-secondary"></i>
                                 </span>
@@ -140,32 +139,33 @@
             <div class="row border-bottom border-secondary m-0">
                 <div class="col">
                     <div class="row post-content p-2">
-                        <div class="col-1 pe-2  ">
-                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1805905799190925312/uJ-RspWv_400x400.jpg" height="40px" width="40px"/>
                         </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
-                            <div class="post-heading d-flex gap-4">
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
                                 <div class="heading d-flex align-items-center me-4">
-                                    <span class="fs-6">Lizzy</span>
-                                    <a class="user-details"><i class="bi bi-patch-check fs-6"></i></a>
-                                    <span class="fs-6 text-secondary"> @Ngimuhlez</span>
-                                    <span class="fs-6"> 4h</span>
+                                    <span class="fs-6 pe-1 fw-bolder">InspiroQuest</span>
+                                    <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
+                                    <span class="fs-6 text-secondary pe-1">@InspiroQuest</span>
+                                    <span class="fs-6 pe-1">. 23h</span>
                                 </div>
                                 <div class="heading-icons ms-4">
-                                    <i class="ms-4">grok</i>
-                                    <i class="bi bi-three-dots description more-details p-2"></i>
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
                                 </div>
                             </div>
-                            <p class="content-description">If you ever need to use this just know your partner is cheating.</p>
+                            <p class="content-description">Your Birthday month reveals the lie you tell Yourself. <br/><br/>// Thread //</p>
                             <div class="content-picture">
-                                <img class="rounded-4" src="https://pbs.twimg.com/media/HDw5keSXwAAIssQ?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
+                                <img class="rounded-4" src="https://pbs.twimg.com/media/HEBN7ZDbIAEt2Ly?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
                             </div>
                             <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
-                                <span class="me-4 p-2"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
-                                <span class="ms-4 p-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">17</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">46</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">242</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">84K</span> </span>
+                                <span class="ms-4 p-1">
                                     <i class="bi fs-6 bi-bookmark text-secondary"></i> 
                                     <i class="bi fs-6 bi-upload text-secondary"></i>
                                 </span>
@@ -178,32 +178,33 @@
             <div class="row border-bottom border-secondary m-0">
                 <div class="col">
                     <div class="row post-content p-2">
-                        <div class="col-1 pe-2  ">
-                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1882935911010181120/y1d7TY77_400x400.jpg" height="40px" width="40px"/>
                         </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
-                            <div class="post-heading d-flex gap-4">
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
                                 <div class="heading d-flex align-items-center me-4">
-                                    <span class="fs-6">Lizzy</span>
-                                    <a class="user-details"><i class="bi bi-patch-check fs-6"></i></a>
-                                    <span class="fs-6 text-secondary"> @Ngimuhlez</span>
-                                    <span class="fs-6"> 4h</span>
+                                    <span class="fs-6 pe-1 fw-bolder">Aspireachieve</span>
+                                    <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
+                                    <span class="fs-6 text-secondary pe-1">@Aspireachievee</span>
+                                    <span class="fs-6 pe-1">. 23h</span>
                                 </div>
                                 <div class="heading-icons ms-4">
-                                    <i class="ms-4">grok</i>
-                                    <i class="bi bi-three-dots description more-details p-2"></i>
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
                                 </div>
                             </div>
-                            <p class="content-description">If you ever need to use this just know your partner is cheating.</p>
+                            <p class="content-description">THE 4 STAGES OF A RELATIONSHIP...<br/> <br/>//THREAD//</p>
                             <div class="content-picture">
-                                <img class="rounded-4" src="https://pbs.twimg.com/media/HDw5keSXwAAIssQ?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
+                                <img class="rounded-4" src="https://pbs.twimg.com/media/HEBL65taYAA5JB_?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
                             </div>
                             <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
-                                <span class="me-4 p-2"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
-                                <span class="ms-4 p-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">10</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">89</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">432</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">110K</span> </span>
+                                <span class="ms-4 p-1">
                                     <i class="bi fs-6 bi-bookmark text-secondary"></i> 
                                     <i class="bi fs-6 bi-upload text-secondary"></i>
                                 </span>
@@ -216,32 +217,111 @@
             <div class="row border-bottom border-secondary m-0">
                 <div class="col">
                     <div class="row post-content p-2">
-                        <div class="col-1 pe-2  ">
-                            <img class="rounded-pill" src="https://pbs.twimg.com/profile_images/1932142323565002753/zvgr-UiI_400x400.jpg" height="40px" width="40px"/>
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1999801094159933446/WnobSEea_400x400.jpg" height="40px" width="40px"/>
                         </div>
-                        <div class="post-container col-11 d-flex flex-column align-items-start gap-0 ps-2">
-                            <div class="post-heading d-flex gap-4">
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
                                 <div class="heading d-flex align-items-center me-4">
-                                    <span class="fs-6">Lizzy</span>
-                                    <a class="user-details"><i class="bi bi-patch-check fs-6"></i></a>
-                                    <span class="fs-6 text-secondary"> @Ngimuhlez</span>
-                                    <span class="fs-6"> 4h</span>
+                                    <span class="fs-6 pe-1 fw-bolder">Classic Wallpaper</span>
+                                    <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
+                                    <span class="fs-6 text-secondary pe-1">@Classisco123</span>
+                                    <span class="fs-6 pe-1">. 19h</span>
                                 </div>
                                 <div class="heading-icons ms-4">
-                                    <i class="ms-4">grok</i>
-                                    <i class="bi bi-three-dots description more-details p-2"></i>
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
                                 </div>
                             </div>
-                            <p class="content-description">If you ever need to use this just know your partner is cheating.</p>
+                            <p class="content-description">New Wallpaper.</p>
                             <div class="content-picture">
-                                <img class="rounded-4" src="https://pbs.twimg.com/media/HDw5keSXwAAIssQ?format=jpg&name=small" alt="content-picture" height="500px" width="400px"/>
+                                <img class="rounded-4" src="https://pbs.twimg.com/media/HEB6RmaacAAKlCe?format=jpg&name=medium" alt="content-picture" height="500px" width="400px"/>
                             </div>
                             <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
-                                <span class="me-4 p-2"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
-                                <span class="me-4 p-2"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
-                                <span class="ms-4 p-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">10</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">112</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">1.4K</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">64K</span> </span>
+                                <span class="ms-4 p-1">
+                                    <i class="bi fs-6 bi-bookmark text-secondary"></i> 
+                                    <i class="bi fs-6 bi-upload text-secondary"></i>
+                                </span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border-bottom border-secondary m-0">
+                <div class="col">
+                    <div class="row post-content p-2">
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1940344470290989057/1OUP8RgK_400x400.jpg" height="40px" width="40px"/>
+                        </div>
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
+                                <div class="heading d-flex align-items-center me-4">
+                                    <span class="fs-6 pe-1 fw-bolder">Cristiano Ronaldo</span>
+                                    <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
+                                    <span class="fs-6 text-secondary pe-1">@Christiano</span>
+                                    <span class="fs-6 pe-1">. 1h</span>
+                                </div>
+                                <div class="heading-icons ms-4">
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
+                                </div>
+                            </div>
+                            <p class="content-description">Getting better every day 💪🏽</p>
+                            <div class="content-picture">
+                                <img class="rounded-4" src="https://pbs.twimg.com/media/HEF3SPzbMAAwm7U?format=jpg&name=large" alt="content-picture" height="500px" width="400px"/>
+                            </div>
+                            <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">6k</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">7.7K</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">141K</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">6.5M</span> </span>
+                                <span class="ms-4 p-1">
+                                    <i class="bi fs-6 bi-bookmark text-secondary"></i> 
+                                    <i class="bi fs-6 bi-upload text-secondary"></i>
+                                </span>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row border-bottom border-secondary m-0">
+                <div class="col">
+                    <div class="row post-content p-2">
+                        <div class="col-1 pe-0  ps-0">
+                            <img class="rounded-pill ms-2" src="https://pbs.twimg.com/profile_images/1982335075543896064/jd-qLjWp_400x400.jpg" height="40px" width="40px"/>
+                        </div>
+                        <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
+                            
+                            <div class="post-heading container d-flex justify-content-between px-0">
+                                <div class="heading d-flex align-items-center me-4">
+                                    <span class="fs-6 pe-1 fw-bolder">Living Tricks</span>
+                                    <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
+                                    <span class="fs-6 text-secondary pe-1">@LivingTricks_</span>
+                                    <span class="fs-6 pe-1">. 9h</span>
+                                </div>
+                                <div class="heading-icons ms-4">
+                                    <img src="./assets/grok-3.svg" alt="grok" height="20px" width="20px"/>
+                                    <i class="bi bi-three-dots description more-details ps-1 fs-6 text-secondary"></i>
+                                </div>
+                            </div>
+                            <p class="content-description">Read it again carefully. The answer is literally right in front of you 😏</p>
+                            <div class="content-picture">
+                                <img class="rounded-4" src="https://pbs.twimg.com/media/HEEGZFkaQAAIGrt?format=jpg&name=large" alt="content-picture" height="500px" width="400px"/>
+                            </div>
+                            <div class="content-footer d-flex align-items-center gap-4 pe-2 ps-2">
+                                <span class="me-4 p-1"><i class="fs-6 bi bi-chat text-secondary"></i> <span class="fs-6 text-secondary">22</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-arrow-repeat text-secondary"></i><span class="fs-6 text-secondary">21</span> </span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-heart text-secondary"></i> <span class="fs-6 text-secondary">78</span></span>
+                                <span class="me-4 p-1"><i class="bi fs-6 bi-bar-chart text-secondary"></i> <span class="fs-6 text-secondary">9.4K</span> </span>
+                                <span class="ms-4 p-1">
                                     <i class="bi fs-6 bi-bookmark text-secondary"></i> 
                                     <i class="bi fs-6 bi-upload text-secondary"></i>
                                 </span>
@@ -257,12 +337,14 @@
         <aside class="subscription">
             <div class="container p-2 d-flex flex-column align-items-start">
 
+                <!--Serch Button-->
                 <span class="position-fixed top-0 bg-black border border-secondary p-2 rounded-5 search-button">
                     <i class="bi bi-search fs-6 text-secondary"></i>
                     <input class="fs-6 bg-black pe-4 me-4" type="search" placeholder="Search" aria-label="Search"/>
                 </span>
 
-                <div class="container border border-secondary p-4 rounded-5 d-flex flex-column ms-0 mt-4 me-0 sub">
+                <!--Subscription Container-->
+                <div class="container border border-secondary p-4 rounded-5 d-flex flex-column ms-0 me-0 sub" style="margin-top: 4rem;">
                     <span class="d-flex align-items-center">
                         <h6 class="pe-2 fs-5">Subscribe to premium</h6>
                         <button type="button" class="btn btn-success p-0">50% off</button>
@@ -271,17 +353,18 @@
                     <button type="button" class="btn btn-info rounded-5 text-white p-2 fw-bolder subscribe">Subscribe</button>
                 </div>
 
+                <!--News-->
                 <div class="container border border-secondary p-4 rounded-5 d-flex flex-column ms-0 mt-4 me-0 sub">
                     <span class="d-flex justify-content-between mb-4">
-                        <h5 class="">Today's News</h6>
-                        <button type="button" class="btn-close text-white p-0 m-0" aria-label="Close">X</button>
+                        <h5 class="fw-bolder">Today's News</h6>
+                        <button type="button" class="btn-close text-white p-0 m-0" aria-label="Close" style="color: white;">X</button>
                     </span>
 
                     <span class="d-flex flex-column mb-4">
                         <p class="mb-0 fw-bolder text-wrap text-start fs-6">Get rid of ads, see your analytics, boost your replies and unlock 20+ features.</p>
-                        <div class="d-flex ">
-                            <span class="text-secondary fs-6">17 hours ago.</span>
-                            <span class="text-secondary fs-6">News.</span>
+                        <div class="d-flex my-0">
+                            <span class="text-secondary fs-6 pe-1">17 hours ago</span>
+                            <span class="text-secondary fs-6 pe-1">News</span>
                             <span class="text-secondary fs-6">4,432 posts</span>
                         </div>
                     </span>
@@ -401,15 +484,13 @@
                     </div>
                 </div>
 
-                
-                <div class="container container-footer d-flex p-4">
-                    <a href="#" class="text-secondary fs-6 me-2">Terms of service | </a>
-                    <a href="#" class="text-secondary fs-6 me-2">Privacy Policy |</a>
-                    <a href="#" class="text-secondary fs-6 me-2">Cookie Policy |</a>
-                    <a href="#" class="text-secondary fs-6 me-2">Accessibility |</a>
-                    <a href="#" class="text-secondary fs-6 me-2">Ads Info |</a>
-                    <a href="#" class="text-secondary fs-6 me-2">More ... |</a>
-                    <a href="#" class="text-secondary fs-6 me-2">2026 X Corp |</a>
+                <div class="container-footer py-2 px-4">
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">Terms of service  | </a>
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">Privacy Policy  |</a>
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">Cookie Policy  |</a>
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">Accessibility  |</a>
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">Ads Info  |</a>
+                    <a href="#" class="text-secondary me-2 link-underline link-underline-opacity-0">More ...  2026 X Corp  |</a>
                     
                 </div>
 

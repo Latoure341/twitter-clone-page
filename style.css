@@ -138,11 +138,12 @@ button img {
 .sub .subscribe {
     width: 7rem;
 }
-
-.subscription div:nth-child(2) {
-    margin-top: 3rem !important;
+.container-footer{
+    width: 25rem !important;
 }
-
+.container-footer a {
+    font-size: smaller !important;
+}
 
 /* Media Queries */
 @media (max-width: 480px) {
