@@ -133,7 +133,7 @@ button img {
     width: 17rem !important;
 }
 .sub {
-    width: 22rem !important;
+    width: 23rem !important;
 }
 .sub .subscribe {
     width: 7rem;
@@ -144,11 +144,21 @@ button img {
 .container-footer a {
     font-size: smaller !important;
 }
+.paragraph-size {
+    font-size: smaller;
+}
+
+/* Fixed Side buttons */
+.fixed-btn div{
+    box-shadow: 0 0 5px white;
+    cursor: pointer;
+}
 
 /* Media Queries */
 @media (max-width: 480px) {
     .main-content {
         margin-left: 4.4rem;
+        width: 50vw !important;
     }
     .subscription {
         display: none;
