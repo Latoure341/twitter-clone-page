@@ -12,16 +12,16 @@
 </head>
 
 <body class="bg-black text-white">
-    <!-- UI update: Bootstrap 3-column shell similar to Twitter/X -->
+
     <div class="container-fluid px-0 app-shell">
         <div class="row g-0 justify-content-center">
-            <!-- UI update: Left sidebar column (sticky on desktop/tablet) -->
+           
             <div class="col-2 col-md-3 col-lg-3 d-none d-sm-block">
                 <aside class="sidebar d-flex flex-column">
         <a href="#" class="ps-1">
-            <span class="nav-link rounded-pill py-1 px-3"><i class="bi bi-twitter-x text-light"></i></span>
+            <span class="nav-link rounded-pill py-0 px-3"><i class="bi bi-twitter-x text-light"></i></span>
         </a>
-        <a href="#" class="nav-link rounded-5 pe-0 text-wrap" style="width: 10rem;">
+        <a href="#" class="nav-link rounded-5 pe-4 text-wrap" style="width: 10rem;">
             <span class=""><i class="bi bi-house-door-fill active"></i></span> <span class="description active">Home</span>
         </a>
         <a href="#" class="nav-link rounded-5" style="width: 10rem;">
@@ -58,12 +58,10 @@
                 </aside>
             </div>
 
-            <!-- UI update: Center feed column -->
             <div class="col-12 col-sm-10 col-md-8 col-lg-5">
                 <main class="main-content">
                     <section class="text-center feed border-end border-6 border-secondary p-0 m-0">
             <!--Top Navigation-->
-            <!-- UI update: sticky feed tabs instead of fixed-width/fixed-position bar -->
             <div class="position-sticky top-0 row d-flex justify-content-end border-bottom border-secondary bg-opacity-75 bg-black p-0 m-0 z-3">
                 <div class="col-6 p-2 m-0 feed-btn">
                     <span class="border-bottom border-primary border-4 p-2 fw-bolder">For you</span>
@@ -74,7 +72,7 @@
             </div>
 
             <!--Post Input-->
-            <div class="mt-4 row border-bottom border-secondary m-0">
+            <div class="row border-bottom border-secondary m-0">
                 <div class="col mt-4">
                     <form class="d-flex flex-column">
                          <div class="d-flex flex-row justify-content-start align-items-center p-2 mt-2">
@@ -503,6 +501,7 @@
             </div>
     </section>
 
+    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

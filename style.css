@@ -2,6 +2,20 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* CSS Variables for Auto Dark Mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --hover-color: rgb(216, 216, 216);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --hover-color: rgb(16, 16, 16);  
+  } 
+}
 
 * {
     font-family: "Roboto", sans-serif;;
@@ -12,7 +26,6 @@ body {
     color: #e7e9ea;
 }
 
-/* UI update: App shell spacing for cleaner 3-column layout */
 .app-shell {
     max-width: 1400px;
     margin: 0 auto;
@@ -20,33 +33,29 @@ body {
 
 /* Sidebar */
 .sidebar {
-    position: sticky; /* UI update: keep left nav visible on scroll */
+    position: sticky; 
     top: 0;
     min-height: 100vh;
     width: 100%;
     border-right: 1px solid rgb(47, 51, 54);
     transition: width 0.3s;
-    padding: 0.5rem 0.25rem;
+    padding: 0.3rem 0.25rem;
 }
 
-/* .logo {
-    margin-left: 3rem;
-    padding: 0.5rem 1.2rem;
-} */
 
 .sidebar a {
     display: flex;
     align-items: center;
-    gap: 0.95rem; /* UI update: compact icon/text spacing */
-    padding: 0.55rem 1rem;
+    gap: 0.95rem; 
+    padding: 0.3rem 1rem;
     margin-left: 1.25rem;
-    width: fit-content !important; /* UI update: remove hard-coded inline widths influence */
+    width: fit-content !important;
 }
 .active {
     font-weight: bolder;
 }
 .bi {
-    font-size: 1.75rem; /* UI update: larger nav/tweet icons */
+    font-size: 1.75rem; 
 }
 .more {
     padding: 0.5px 1px;
@@ -70,7 +79,7 @@ body {
     width: 82%;
 }
 .profile-btn:hover {
-    background-color: rgb(16, 16, 16) !important;
+    background-color: var(--hover-color) !important;
 }
 
 button img {
@@ -98,7 +107,7 @@ button img {
     text-align: end;
 }
 .nav-link:hover {
-    background-color: rgb(25, 25, 25); /* UI update: Twitter-like hover */
+    background-color: rgb(25, 25, 25); 
 } 
 
 /* Main Content */
@@ -118,7 +127,7 @@ button img {
     border-left: 1px solid rgb(47, 51, 54);
 }
 .feed-btn:hover {
-    background-color: rgb(25, 25, 25);
+    background-color: var(--hover-color);
     transition: ease-in-out 0.3s;
 }
 .post-input, .post-input:focus {
@@ -155,7 +164,7 @@ button img {
     border-radius: 999px;
 }
 .content-footer span:hover {
-    background-color: rgba(29, 155, 240, 0.14);
+    background-color: var(--hover-color);
 }
 
 /* Aside Section */
@@ -164,7 +173,7 @@ button img {
     max-width: 24rem;
     margin-right: auto;
     margin-left: 1rem;
-    position: sticky; /* UI update: keep right sidebar aligned on desktop */
+    position: sticky;
     top: 0;
     max-height: 100vh;
     overflow-y: auto;
@@ -176,7 +185,7 @@ button img {
     border-color: lightblue !important;
 }
 .search-button input:focus, .search-button input{
-    color: white;
+    color: var(--text-color);
     outline: none !important;
     border: none !important;
 }
@@ -207,7 +216,6 @@ button img {
 
 /* Media Queries */
 @media (max-width: 480px) {
-    /* UI update: mobile feed-first layout */
     .main-content {
         margin-left: 0;
         width: 100% !important;
@@ -218,7 +226,6 @@ button img {
 }
 
 @media (max-width: 991.98px) {
-    /* UI update: tablet - keep left sidebar compact, hide right via Bootstrap class */
     .sidebar {
         border-right: none;
     }
