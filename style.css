@@ -27,7 +27,7 @@ body {
 }
 
 .app-shell {
-    max-width: 1400px;
+    max-width: 90rem;
     margin: 0 auto;
 }
 
@@ -134,7 +134,6 @@ button img {
     outline: none;
 }
 
-/* UI update: Improve tweet card spacing and interaction */
 .post-content {
     transition: background-color 0.2s ease-in-out;
     border-bottom: 1px solid rgb(47, 51, 54);
@@ -145,8 +144,8 @@ button img {
     background-color: rgba(239, 243, 244, 0.06);
 }
 .post-content img.rounded-pill {
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75;
     object-fit: cover;
 }
 .post-container .content-description {
@@ -161,10 +160,15 @@ button img {
     border: 1px solid rgb(47, 51, 54);
 }
 .content-footer span {
-    border-radius: 999px;
+    border-radius: 62.4375rem;
 }
 .content-footer span:hover {
     background-color: var(--hover-color);
+}
+.icon-container {
+    @media (max-width:1024px) {
+        margin-left: 0 !important;
+    }
 }
 
 /* Aside Section */
@@ -191,6 +195,9 @@ button img {
 }
 .search-button input {
     width: 17rem !important;
+    @media (max-width: 1024px) {
+        width: 15rem !important;
+    }
 }
 .sub {
     width: 100% !important;
@@ -223,6 +230,16 @@ button img {
     .subscription {
         display: none;
     }
+    .icon-container a:nth-child(4), .icon-container a:nth-child(5), .icon-container a:nth-child(6){
+        display: none;
+    }
+    .post-heading, .content-description {
+        margin-left: 1rem !important;
+        font-size: xx-small !important;
+    }
+    .content-footer {
+        gap: 1rem !important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -243,5 +260,8 @@ button img {
     }
     .feed {
         border-left: none;
+    }
+    .fixed-btn {
+        display: none;
     }
 }

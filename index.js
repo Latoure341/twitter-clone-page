@@ -1,4 +1,4 @@
-// NEW FEATURE: Like Button Toggle
+// FEATURE: Like Button Toggle
 (function initLikeToggle() {
   function parseCompactNumber(str) {
     const s = String(str || "")
@@ -79,7 +79,7 @@
   });
 })();
 
-// NEW FEATURE: Tweet Creation
+// Tweet Creation
 (function initTweetCreation() {
   var STORAGE_KEY = "tw_clone_userTweets_v1";
   var isHydrated = false;
@@ -427,7 +427,7 @@
   }
 })();
 
-// NEW FEATURE: Tweet Timestamp
+// FEATURE: Tweet Timestamp
 (function initTweetTimestamps() {
   function parseRelativeAge(text) {
     // Expected formats currently in markup: ". 4h", ". 23h", ". 9h", etc.
@@ -507,3 +507,43 @@
     }, 30000);
   });
 })();
+
+// Nav at Screen Max Width 480px
+function mobileNav() {
+
+  if (window.innerWidth <= 499) {
+    const topNav = document.querySelector("#top-nav")
+
+    // Check if div already exists so it doesn't duplicate
+    if (!document.getElementById("mobileNav")) {
+
+      const newDiv = document.createElement("div");
+      const newSpan = document.createElement("span");
+      const imageDiv = document.querySelector(".profile-pic");
+      
+      //Styles
+      newDiv.style.display = "flex";
+      newDiv.style.gap = "1.5rem";
+      newDiv.style.padding = "1rem 1rem";
+
+      imageDiv.style.width = "30px";
+      imageDiv.style.height = "30px";
+      imageDiv.style.borderRadius = "50%";
+
+      newSpan.style.fontWeight = "bolder";
+      newSpan.textContent = "Home";
+
+      newDiv.id = "mobileDiv";
+      newDiv.appendChild(imageDiv);
+      newDiv.appendChild(newSpan);
+
+      topNav.prepend(newDiv);
+    }
+  }
+}
+
+// Run when page loads
+window.addEventListener("load", mobileNav)
+
+// Run when screen resizes
+window.addEventListener("resize", mobileNav)

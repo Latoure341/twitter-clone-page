@@ -48,7 +48,7 @@
         <button type="button" class="btn btn-light rounded-pill fw-bolder post-btn py-2">Post</button>
 
         <button type="button" class="btn btn-black rounded-pill d-flex justify-content-center align-items-center gap-2 p-2 profile-btn">
-            <img src="https://pbs.twimg.com/profile_images/2033865584266346496/g1G15O4b_400x400.jpg" alt="profile" height="50px" width="50px"/>
+            <img class="profile-pic" src="https://pbs.twimg.com/profile_images/2033865584266346496/g1G15O4b_400x400.jpg" alt="profile" height="50px" width="50px"/>
             <span class="d-flex flex-wrap details">
                 <p class="description title text-white">eric_</p>
                 <p class="description subtitle">@EricMothupi21</p>
@@ -61,8 +61,9 @@
             <div class="col-12 col-sm-10 col-md-8 col-lg-5">
                 <main class="main-content">
                     <section class="text-center feed border-end border-6 border-secondary p-0 m-0">
+
             <!--Top Navigation-->
-            <div class="position-sticky top-0 row d-flex justify-content-end border-bottom border-secondary bg-opacity-75 bg-black p-0 m-0 z-3">
+            <div class="position-sticky top-0 row d-flex justify-content-end border-bottom border-secondary bg-opacity-75 bg-black p-0 m-0 z-3" id="top-nav">
                 <div class="col-6 p-2 m-0 feed-btn">
                     <span class="border-bottom border-primary border-4 p-2 fw-bolder">For you</span>
                 </div>
@@ -111,7 +112,7 @@
                         </div>
                         <div class="post-container col-11 d-flex flex-column align-items-start ps-2">
                             
-                            <div class="post-heading container d-flex justify-content-between px-1">
+                            <div class="post-heading container d-flex justify-content-between px-2">
                                 <div class="heading d-flex align-items-center me-4">
                                     <span class="fs-6 pe-1 fw-bolder">Lizzy</span>
                                     <a class="user-details pe-1"><i class="bi bi-patch-check fs-6"></i></a>
@@ -341,7 +342,6 @@
                 </main>
             </div>
 
-            <!-- UI update: Right sidebar column (hidden on tablet/mobile) -->
             <div class="col-lg-4 d-none d-lg-block">
                 <aside class="subscription">
                     <div class="container p-2 d-flex flex-column align-items-start">
