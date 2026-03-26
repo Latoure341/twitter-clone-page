@@ -22,8 +22,8 @@
 }
 body {
     box-sizing: border-box;
-    background-color: #000;
-    color: #e7e9ea;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .app-shell {
