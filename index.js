@@ -349,7 +349,7 @@
       }
     });
 
-    // NEW FEATURE: Image Preview
+    // Image Preview
     // Handled above
 
     feedForm.addEventListener("submit", function (e) {
